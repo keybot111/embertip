@@ -1,0 +1,20 @@
+{
+  "name": "embertip",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "EmberTip — BCH payment pages in 30 seconds (BCH BLAZE 2026)",
+  "scripts": {
+    "build": "esbuild src/app.js --bundle --format=esm --platform=browser --outfile=dist/app.bundle.js --minify",
+    "serve": "python3 -m http.server 8080"
+  },
+  "dependencies": {
+    "@bitauth/libauth": "3.1.0-next.8",
+    "@wizardconnect/core": "0.2.10",
+    "@wizardconnect/dapp": "0.2.7",
+    "qrcode-generator": "2.0.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

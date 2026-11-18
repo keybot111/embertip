@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EmberTip — BCH BLAZE 2026 Presentation</title>
+<style>
+  :root { --bch:#0ac18e; --ink:#12211c; --muted:#5c6f68; --ember:#ff7a1a; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:#0d1f19; color:#eaf5f0; }
+  .slide { min-height: 100vh; display: none; flex-direction: column; justify-content: center; padding: 6vh 8vw; }
+  .slide.active { display: flex; }
+  .kicker { color: var(--bch); font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 14px; margin-bottom: 10px; }
+  h1 { font-size: clamp(42px, 8vw, 84px); margin: 0 0 12px; letter-spacing: -1px; }
+  h1 .grad { background: linear-gradient(90deg, var(--bch), var(--ember)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  h2 { font-size: clamp(30px, 5vw, 48px); margin: 0 0 18px; }
+  p, li { font-size: clamp(17px, 2.4vw, 23px); line-height: 1.55; color: #cfe3da; max-width: 880px; }
+  ul { padding-left: 22px; } li { margin: 8px 0; }
+  a { color: #ffd9ae; }
+  code { background:#1d3a30; padding: 2px 8px; border-radius: 6px; font-size: .85em; word-break: break-all; }
+  .team { color: var(--muted); font-size: clamp(15px, 2vw, 19px); }
+  .nav { position: fixed; bottom: 18px; right: 22px; display: flex; gap: 8px; align-items: center; color: var(--muted); font-size: 14px; }
+  .nav button { background:#1d3a30; color:#eaf5f0; border:1px solid #2a4a3e; border-radius: 999px; padding: 8px 16px; cursor: pointer; font-size: 15px; }
+  .nav button:hover { background:#2a4a3e; }
+  .big { font-size: clamp(22px, 3.4vw, 32px); color:#eaf5f0; }
+  @media print { .slide { display: flex !important; min-height: auto; page-break-after: always; } .nav { display: none; } body { background:#0d1f19; } }
+</style>
+</head>
+<body>
+
+<section class="slide active">
+  <div class="kicker">BCH BLAZE 2026 · Mainnet Track</div>
+  <h1>🔥 <span class="grad">EmberTip</span></h1>
+  <p class="big">BCH payment pages in 30 seconds.</p>
+  <p>Create a page, share the link, get paid on Bitcoin Cash mainnet —
+  no server, no account, no custody.</p>
+  <p class="team">Team: @mr-opak, built with his AI agent<br>
+  Demo &amp; source: see the banner links on the EmberTip home page<br>
+  EMBER2026 votes: <code>bitcoincash:zpankkh7t7w9kaajlfwh7djdtatmz7qjgqy55q5750</code></p>
+</section>
+
+<section class="slide">
+  <div class="kicker">The Story of EmberTip</div>
+  <h2>Getting paid in BCH still means pasting a raw address into a chat.</h2>
+  <p>The address gets buried, amounts get typed wrong, and payers hesitate —
+  is this really the right address? Did it arrive? Nobody can tell.</p>
+  <p>During BCH BLAZE we asked a simple question: what if a BCH address had a
+  proper front door? A page with a name, preset amounts, a QR code, a wallet
+  button and a live feed that shows the money landing. EmberTip is that front door.</p>
+</section>
+
+<section class="slide">
+  <div class="kicker">Benefits of EmberTip</div>
+  <h2>Why pages beat raw addresses</h2>
+  <ul>
+    <li><strong>30 seconds to create</strong> — name, address, amounts. No signup, ever.</li>
+    <li><strong>Every wallet works</strong> — scan the BIP-21 QR, or connect with WizardConnect and sign in one tap.</li>
+    <li><strong>Live receipt feed</strong> — payments appear on-chain seconds after they are sent. Trust, visible.</li>
+    <li><strong>Non-custodial</strong> — funds go straight to the owner's own wallet. EmberTip never touches a key or a satoshi.</li>
+    <li><strong>Unkillable pages</strong> — the whole page lives inside its own link. No server to shut down, no database to lose.</li>
+    <li><strong>Free forever</strong> — static hosting costs nothing, BCH fees cost almost nothing.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <div class="kicker">BCH Usage</div>
+  <h2>Real mainnet money movement</h2>
+  <ul>
+    <li><strong>Mainnet transactions</strong> — every payment is a real BCH transaction: BIP-21 payments from any wallet, or transactions constructed by EmberTip and signed + broadcast by the visitor's own wallet via WizardConnect.</li>
+    <li><strong>Micro-tips that actually work</strong> — at ~$0.001 fees, a 0.001 BCH tip (≈ $0.21) loses less than 0.5% to the network. Impossible on BTC or cards.</li>
+    <li><strong>CashTokens</strong> — our banner carries a CashTokens address receiving EMBER2026, doubling as Community Choice voting.</li>
+    <li><strong>Instant for small amounts</strong> — BCH 0-conf makes tips feel instant; the feed confirms on-chain.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <div class="kicker">The Vision for EmberTip</div>
+  <h2>A payment page for every creator in the BCH economy</h2>
+  <ul>
+    <li>Next: <strong>thank-you CashTokens</strong> — tippers automatically receive a collectible token back.</li>
+    <li>Next: <strong>PUSD pages</strong> — stablecoin pricing for merchants who can't ride volatility.</li>
+    <li>Next: <strong>invoice mode</strong> — fixed-amount links with memos and expiry for freelancers.</li>
+    <li>Next: an <strong>embeddable tip widget</strong> for blogs and streams.</li>
+    <li>Target: 100,000 live payment pages by 2027.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h1>THANK YOU! 🔥</h1>
+  <p class="big">Try the live demo, send a tiny tip, watch it land.</p>
+  <p>Questions &amp; votes — EMBER2026 to
+  <code>bitcoincash:zpankkh7t7w9kaajlfwh7djdtatmz7qjgqy55q5750</code></p>
+  <p class="team">EmberTip · BCH BLAZE 2026 · Team @mr-opak + AI agent</p>
+</section>
+
+<div class="nav">
+  <span id="counter">1 / 6</span>
+  <button id="prev">← Prev</button>
+  <button id="next">Next →</button>
+</div>
+
+<script>
+  const slides = [...document.querySelectorAll(".slide")];
+  let i = 0;
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle("active", k === i));
+    document.getElementById("counter").textContent = (i + 1) + " / " + slides.length;
+  }
+  document.getElementById("next").onclick = () => show(i + 1);
+  document.getElementById("prev").onclick = () => show(i - 1);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight" || e.key === " ") show(i + 1);
+    if (e.key === "ArrowLeft") show(i - 1);
+  });
+  document.addEventListener("click", (e) => { if (e.target.tagName !== "BUTTON" && e.target.tagName !== "A") show(i + 1); });
+</script>
+</body>
+</html>

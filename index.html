@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EmberTip — BCH payment pages in 30 seconds</title>
+<meta name="description" content="Create a Bitcoin Cash payment page in seconds. No server, no custody. Share a link, get paid on BCH mainnet.">
+<link rel="stylesheet" href="src/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+<!-- ══════════ HACKATHON BANNER (required by BCH BLAZE 2026 rules) ══════════ -->
+<div class="blaze-banner">
+  <span class="blaze-banner-title">🔥 EmberTip · BCH BLAZE 2026</span>
+  <a id="banner-presentation" href="presentation.html" target="_blank" rel="noopener">▶ Presentation</a>
+  <a id="banner-repo" href="https://github.com/keybot111/embertip" target="_blank" rel="noopener">⌥ Source code</a>
+  <span class="blaze-banner-ember">Vote with EMBER2026 → <code id="banner-ember-address">bitcoincash:zpankkh7t7w9kaajlfwh7djdtatmz7qjgqy55q5750</code></span>
+</div>
+
+<header class="site-header">
+  <a class="logo" href="#/">🔥 EmberTip</a>
+  <nav>
+    <a href="#/create">Create a page</a>
+    <a href="#/p/demo">Live demo</a>
+  </nav>
+</header>
+
+<main id="app"><!-- views render here --></main>
+
+<footer class="site-footer">
+  <p>EmberTip is non-custodial: it never holds keys or funds. Payments go
+  straight to the page owner's own Bitcoin Cash wallet.</p>
+  <p>Built for <a href="https://dorahacks.io/hackathon/bchblaze2026" target="_blank" rel="noopener">BCH BLAZE 2026</a>
+  · EMBER2026 donations: <code id="footer-ember-address">bitcoincash:zpankkh7t7w9kaajlfwh7djdtatmz7qjgqy55q5750</code></p>
+</footer>
+
+<script type="module" src="dist/app.bundle.js"></script>
+</body>
+</html>
